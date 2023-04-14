@@ -62,6 +62,7 @@
 import { queuePostFlushCb, reactive, toRefs, ref, onMounted } from "vue";
 export default {
   setup() {
+    const baseUrl = "/edu-chat/#/"
     let state = reactive({  
       //第一栏数据（8个卡片）
       title1: "AI赋能教育",
@@ -71,70 +72,70 @@ export default {
           color: "linear-gradient(to bottom right, #4f46e5, #db2777)", //背景颜色
           text: "1000", //说明
           img: "自动出题.png", //背景底图
-          url: "https://www.baidu.com/", //链接
+          url: `${baseUrl}?functionUsed=question-setter`, //链接
         },
         {
           title: "作业批改",
           color: "linear-gradient(to bottom right, #4b5563, #4f46e5)",
           text: "1000",
           img: "作文批改.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=homework-correction`,
         },
         {
           title: "心理测评",
           color: "linear-gradient(to bottom right, #4b5563, #059669)",
           text: "1000",
           img: "心理测评.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=emotion`,
         },
         {
           title: "古诗赏析",
           color: "linear-gradient(to bottom right, #d97706, #7c3aed)",
           text: "1000",
           img: "古诗赏析.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=poetry`,
         },
         {
           title: "课程辅导",
           color: "linear-gradient(to bottom right, #2563eb, #d97706)",
           text: "1000",
           img: "课程辅导.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=class-tutorial`,
         },
         {
           title: "作文润色",
           color: "linear-gradient(to bottom right, #059669, #7c3aed)",
           text: "1000",
           img: "作文润色.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=polishing`,
         },
         {
           title: "作业辅导",
           color: "linear-gradient(to bottom right, #059669, #dc2626)",
           text: "1000",
           img: "作业辅导.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=homework-tutorial`,
         },
         {
           title: "教师引导",
           color: "linear-gradient(to bottom right, #d97706, #059669)",
           text: "1000",
           img: "教师引导.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=teacher-guide`,
         },
         {
           title: "高考咨询",
           color: "linear-gradient(to bottom right, #059669, #2563eb)",
           text: "1000",
           img: "高考咨询.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=gaokao`,
         },
         {
           title: "职业规划",
           color: "linear-gradient(to bottom right, #db2777, #059669)",
           text: "1000",
           img: "职业规划.png",
-          url: "https://www.baidu.com/",
+          url: `${baseUrl}?functionUsed=job-plan`,
         },
         {
           title: "模型教育能力基准评价",
