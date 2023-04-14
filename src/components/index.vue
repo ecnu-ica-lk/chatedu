@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="head">
-      <img src="/educhat-removebg-preview.png" style="width: 400px"/>
+      <img src="/educhat-removebg-preview.png" style="width: 400px" />
       <!-- <h1>人工智能平台</h1> -->
       <br />
       <p>
@@ -45,20 +45,21 @@
       <div class="cardtitle">团队介绍</div>
       <div class="about-us text-sm text-gray-500 px-2 leading-7">
         <div>
-          <strong>Authors:</strong>
-          <span>Qin Chen, Jie Zhou and Liang He, East China Normal University</span>
+          <strong>作者:</strong>
+          <span>陈琴、周杰和贺樑，华东师范大学</span>
         </div>
         <div>
-          <strong>Contriubutors:</strong>
-          <span
-            >Zhikai Lei, Yiyang Gu, Yuhao Dan, Yong Li, Jianghao Yin, Linhao Ye, Zhiyan
-            Tie, Yougen Zhou, Yilei Wang, Daoguo Dong, Jiabao Zhao, Qin Chen, Jie Zhou and
-            Liang He</span
-          >
+          <strong>贡献者:</strong>
+          <span>
+            雷智凯、顾轶洋、但宇豪、李雍、殷江灏、殷江灏、铁之琰、周友根、王一雷、董道国、赵佳宝、陈琴、周杰和贺樑
+          </span>
         </div>
         <div>
-          <strong>Acknowlegement:</strong>
-          <span>ZhuQingTing Data Technology (Zhejiang) Co. LTD</span>
+          <strong>致谢:</strong>
+          <a href="http://autopaddle.com">
+            <img style="width:1.2em;" :src="getIcon('autopaddle.svg')" />
+            竹蜻蜓数据科技（浙江）有限公司
+          </a>
         </div>
       </div>
     </div>
@@ -176,7 +177,7 @@ export default {
           color: "linear-gradient(to bottom right, #4b5563, #db2777)",
           text: "1000",
           img: "模型基准评价.png",
-          url: "https://www.baidu.com/",
+          url: "#",
         },
       ],
 
