@@ -51,12 +51,12 @@
         <div>
           <strong>贡献者:</strong>
           <span>
-            雷智凯、顾轶洋、但宇豪、李雍、殷江灏、殷江灏、铁之琰、周友根、王一雷、董道国、赵佳宝、陈琴、周杰和贺樑
+            雷智凯、顾轶洋、但宇豪、李雍、殷江灏、叶林浩、铁之琰、周友根、王一雷、董道国、赵佳宝、陈琴、周杰和贺樑
           </span>
         </div>
         <div>
           <strong>致谢:</strong>
-          <a href="http://autopaddle.com">
+          <a href="http://autopaddle.com" style="color: #6d6d6d !important; text-decoration:none">
             <img style="width:1.2em;" :src="getIcon('autopaddle.svg')" />
             竹蜻蜓数据科技（浙江）有限公司
           </a>
@@ -426,8 +426,8 @@ export default {
     flex-direction: column;
     align-items: start;
     strong {
-      // min-width: 12.5rem;
-      padding-right: 12px;
+      min-width: 5rem;
+      margin-right: 12px;
     }
     div {
       display: flex;
