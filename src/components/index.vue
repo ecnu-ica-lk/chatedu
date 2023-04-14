@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="head">
-      <img src="/logo.svg" style="width: 400px"/>
+      <img src="/educhat-removebg-preview.png" style="width: 400px"/>
       <!-- <h1>人工智能平台</h1> -->
       <br />
       <p>
