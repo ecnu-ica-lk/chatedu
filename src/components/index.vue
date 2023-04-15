@@ -45,11 +45,11 @@
       <div class="cardtitle">团队介绍</div>
       <div class="about-us text-sm text-gray-500 px-2 leading-7">
         <div>
-          <strong>作者:</strong>
+          <strong>负责人:</strong>
           <span>陈琴、周杰和贺樑，华东师范大学</span>
         </div>
         <div>
-          <strong>贡献者:</strong>
+          <strong>参与人:</strong>
           <span>
             雷智凯、顾轶洋、但宇豪、李雍、殷江灏、叶林浩、铁之琰、周友根、王一雷、董道国、赵佳宝、陈琴、周杰和贺樑
           </span>
@@ -64,7 +64,7 @@
       </div>
     </div>
 
-    <div class="bottom">
+    <!-- <div class="bottom">
       <el-divider></el-divider>
       <el-row style="width: 100%" :gutter="10">
         <el-col
@@ -76,7 +76,7 @@
           <a @click="link(item.url)">{{ item.name }}</a>
         </el-col>
       </el-row>
-    </div>
+    </div> -->
 
     <a class="beian" href="https://beian.miit.gov.cn/" target="_blank">
       <img
@@ -144,13 +144,13 @@ export default {
           img: "作文润色.png",
           url: `${baseUrl}?functionUsed=polishing`,
         },
-        {
-          title: "作业辅导",
-          color: "linear-gradient(to bottom right, #059669, #dc2626)",
-          text: "1000",
-          img: "作业辅导.png",
-          url: `${baseUrl}?functionUsed=homework-tutorial`,
-        },
+        // {
+        //   title: "作业辅导",
+        //   color: "linear-gradient(to bottom right, #059669, #dc2626)",
+        //   text: "1000",
+        //   img: "作业辅导.png",
+        //   url: `${baseUrl}?functionUsed=homework-tutorial`,
+        // },
         {
           title: "教师引导",
           color: "linear-gradient(to bottom right, #d97706, #059669)",
@@ -172,13 +172,13 @@ export default {
           img: "职业规划.png",
           url: `${baseUrl}?functionUsed=job-plan`,
         },
-        {
-          title: "模型教育能力基准评价",
-          color: "linear-gradient(to bottom right, #4b5563, #db2777)",
-          text: "1000",
-          img: "模型基准评价.png",
-          url: "#",
-        },
+        // {
+        //   title: "模型教育能力基准评价",
+        //   color: "linear-gradient(to bottom right, #4b5563, #db2777)",
+        //   text: "1000",
+        //   img: "模型基准评价.png",
+        //   url: "#",
+        // },
       ],
 
       title2: "AI赋能其他行业",
