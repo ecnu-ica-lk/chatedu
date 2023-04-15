@@ -4,8 +4,14 @@
       <img src="/educhat-removebg-preview.png" style="width: 400px" />
       <!-- <h1>人工智能平台</h1> -->
       <br />
-      <p>
-        华东师范大学计算机科学与技术学院联合智能教育研究院，由语言认知与知识计算团队（ICALK）主要研发的教育领域对话系统EduChat。EduChat通过自然语言预训练大模型，赋能教育发展，为教育领域提供自动出题、作业批改、心理测评、课程辅导、高考咨询等丰富的功能，服务于老师、学生、家长，让学习更轻松、成绩更出色。
+      <p class="abstract">
+        EduChat（https://www.educhat.top）是国内第一个教育领域对话大模型，由华东师范大学计算机科学与技术学院联合上海市智能教育研究院研发，目前在内测阶段，预计将于6月份对外公测。
+        EduChat以自然语言预训练大模型为基底，融合多样化的教育领域数据，辅以指令微调，构建成为教育领域专属大模型，提供自动出题、作业批改、心理测评、课程辅导、高考咨询等丰富功能，服务于广大老师、学生和家长群体，缓解当前教育资源分布不均衡等问题，发展有温度的智能教育。其主要特点如下：
+        <ul>
+            <li>多样化的教育场景支撑：可以理解教育场景下多样化的用户问题和需求，实现教、学、考、评、管等各个方面的智能化，协助老师、学生和家长共同成长。</li>
+            <li>个性化的学习建议和推荐：可以根据学生的学习情况和偏好进行个性化的建议和推荐，帮助学生更好地发现和掌握自己的学习方法和技巧。</li>
+            <li>即时的反馈和评估：可以即时给出合适的答案和反馈，帮助学生及时发现和纠正错误，提高学生的学习效率和教师的教学质量。</li>
+        </ul>
       </p>
       <!-- <p>
         除了利用自然语言AI技术服务于教育领域，人工平台还将提供先进的图像生成等技术，服务于建筑行业、文旅行业等，以驱动更多行业的发展...
@@ -56,8 +62,11 @@
         </div>
         <div>
           <strong>致谢:</strong>
-          <a href="http://autopaddle.com" style="color: #6d6d6d !important; text-decoration:none">
-            <img style="width:1.2em;" :src="getIcon('autopaddle.svg')" />
+          <a
+            href="http://autopaddle.com"
+            style="color: #6d6d6d !important; text-decoration: none"
+          >
+            <img style="width: 1.2em" :src="getIcon('autopaddle.svg')" />
             竹蜻蜓数据科技（浙江）有限公司
           </a>
         </div>
@@ -317,6 +326,18 @@ export default {
       color: rgb(107 114 128);
       min-width: 15rem;
     }
+    .abstract {
+      text-align:left;
+      text-indent: 2em;
+      ul {
+        margin-top: 1em;
+        padding: 0 3em;
+      }
+      li {
+        text-indent: 0;
+        font-size: 1rem;
+      }
+    }
   }
   .divider {
     margin-top: 6rem;
@@ -439,5 +460,6 @@ export default {
     color: #6d6d6d;
     padding: 36px 0;
   }
+  
 }
 </style>
