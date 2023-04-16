@@ -303,7 +303,7 @@ export default {
   justify-content: center;
   align-items: center;
   .head {
-    max-width: 600px;
+    max-width: min(600px,100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
