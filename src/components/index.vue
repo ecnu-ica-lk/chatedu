@@ -52,12 +52,12 @@
       <div class="about-us text-sm text-gray-500 px-2 leading-7">
         <div>
           <strong>负责人:</strong>
-          <span>陈琴、周杰和贺樑，华东师范大学</span>
+          <span>陈琴、周杰、贺樑（华东师范大学）</span>
         </div>
         <div>
           <strong>参与人:</strong>
           <span>
-            雷智凯、顾轶洋、但宇豪、李雍、殷江灏、叶林浩、铁之琰、周友根、王一雷、董道国、赵佳宝、陈琴、周杰和贺樑
+            雷智凯、顾轶洋、但宇豪、李雍、殷江灏、叶林浩、铁之琰、周友根、王一雷、董道国、赵佳宝、陈琴、周杰、贺樑
           </span>
         </div>
          <div>
@@ -68,12 +68,13 @@
           <strong>致谢:</strong>
           <a
             href="http://autopaddle.com"
-            style="color: #6d6d6d !important; text-decoration: none"
+            style="color: #6d6d6d !important; text-decoration: none;"
             target="_blank"
           >
             <img style="width: 1.2em" :src="getIcon('autopaddle.svg')" />
             竹蜻蜓数据科技（浙江）有限公司
           </a>
+          、 <a style="color: #6d6d6d !important; text-decoration: none;">华东师范大学出版社</a>
         </div>
       </div>
     </div>
@@ -325,7 +326,7 @@ export default {
     p {
       margin-top: 0.5rem;
       margin-bottom: 2rem;
-      font-size: 1.2rem;
+      font-size: 1.2rem !important;
       line-height: 1.75rem;
       text-align: center;
       color: rgb(107 114 128);
@@ -340,7 +341,7 @@ export default {
       }
       li {
         text-indent: 0;
-        font-size: 1rem;
+        font-size: 1rem !important;
       }
     }
   }
@@ -446,7 +447,7 @@ export default {
     font-size: 1.25rem;
     color: #6d6d6d !important;
     padding: 24px 0;
-    line-height: 1.5rem;
+    line-height: 2rem;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -457,6 +458,10 @@ export default {
     }
     div {
       display: flex;
+    }
+
+    @media (max-width:768px) {
+      width: 100%
     }
   }
   .beian {
